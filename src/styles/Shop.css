@@ -1,0 +1,8 @@
+.all-products{
+  display: flex;
+  flex-wrap: wrap;
+}
+.all-products > * {
+  flex: 0 0 calc(25% - 150px);
+  margin: 20px;
+}

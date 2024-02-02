@@ -1,0 +1,18 @@
+.product-card{
+  border: 2px solid salmon;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product-card img{
+  width: 250px;
+ }
+ .product-card button{
+  margin: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+ }
