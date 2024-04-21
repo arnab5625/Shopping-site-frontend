@@ -4,9 +4,7 @@ const CategoryCard = ({categoryText}) => {
   return (
     <div className="category-card">
     <p>{categoryText}</p>
-    
-    
-  </div>
+    </div>
   )
 }
 

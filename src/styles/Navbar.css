@@ -1,8 +1,36 @@
-.nav ul{
+.nav{
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+.nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  text-decoration: none;
+}
 .nav ul li{
   list-style: none;
+  font-size: x-large;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.site-name{
+  text-decoration: none;
+  font-size: x-large;
+  margin-bottom: 8px;
+}
+.nav-left img{
+ width: 50px;
+}
+.nav-left{
+  display: flex;
+  align-items: center;
+}
+.nav-left h4{
+  margin-top: 12px;;
+}
+.nav-list li a{
+  text-decoration: none;
 }

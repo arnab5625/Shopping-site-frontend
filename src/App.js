@@ -1,8 +1,12 @@
 import Navbar from "./components/Navbar";
-import Shop from "./pages/shop";
+import AllProducts from "./pages/allProducts";
 import Profile from "./pages/profile";
 import Home from "./pages/home";
-import CreateProduct from "./pages/createProduct";
+import ProductModification from "./pages/productModification";
+import Mobile from "./pages/mobile";
+import Tablet from "./pages/tablet";
+import Laptop from "./pages/laptop"
+
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,9 +19,15 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/profile" element={<Profile />}>
           </Route>
-          <Route path="/shop" element={<Shop />}>
+          <Route path="/all-products" element={<AllProducts />}>
           </Route>
-          <Route path="/CreateProduct" element={<CreateProduct />}>
+          <Route path="/product-modification" element={<ProductModification />}>
+          </Route>
+          <Route path="/mobile-section" element={<Mobile/>}>
+          </Route>
+          <Route path="/tablet-section" element={<Tablet/>}>
+          </Route>
+          <Route path="/laptop-section" element={<Laptop/>}>
           </Route>
         </Routes>
       </main>

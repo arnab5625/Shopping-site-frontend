@@ -1,0 +1,21 @@
+.input-field{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-mod-btn{
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: orangered;
+  color: white;
+}
+.product-mod-btn:hover{
+  
+  background-color: red;
+  cursor: pointer;
+  border: 2px solid green
+}
+.product-mod-form-font{
+  font-size: 22px;
+}

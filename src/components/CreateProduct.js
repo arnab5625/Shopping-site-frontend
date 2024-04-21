@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import "../styles/ProductCreation.css"
 
 const CreateProduct = () => {
   const {
@@ -26,53 +27,58 @@ const CreateProduct = () => {
 
 
   return (
-    <>
-      <form onSubmit={handleSubmit(submitHandler)}>
-        <div>
+    <div>
+      <h2 style={{display:"flex",alignItems:"center", justifyContent:"center", marginTop:"125px"}}>List Your Product</h2>
+      <form className="product-mod-form-font" onSubmit={handleSubmit(submitHandler)} style={{marginTop:"55px"}}>
+        <div className="input-field">
           <label className="form-label">Title</label>
           <input
             type="text"
             name="title"
             id="title"
-            {...register("title", { required: "please enter product title" })}
+            required={true}
+            {...register("title")}
           />
           {errors.title && <div>{errors.title.message}</div>}
         </div>
-        <div>
+        <div className="input-field">
           <label className="form-label">Description</label>
           <input
             type="text"
             name="description"
             id="description"
-            {...register("description", { required: "please enter product description" })}
+            required={true}
+            {...register("description")}
           />
           {errors.description && <div>{errors.description.message}</div>}
         </div>
-        <div>
+        <div className="input-field">
           <label className="form-label">price</label>
           <input
             type="number"
             name="price"
             id="price"
-            {...register("price", { required: "please enter product price" })}
+            required={true}
+            {...register("price")}
           />
           {errors.price && <div>{errors.price.message}</div>}
         </div>
-        <div>
+        <div className="input-field">
           <label className="form-label">Image Url</label>
           <input
             type="text"
             name="imgUrl"
             id="imgUrl"
-            {...register("imgUrl", { required: "please enter product imgUrl" })}
+            required={true}
+            {...register("imgUrl")}
           />
           {errors.imgUrl && <div>{errors.imgUrl.message}</div>}
         </div>
         <div>
-          <button type="submit">Create Product</button>
+          <button className="product-mod-btn" type="submit">Create Product</button>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 

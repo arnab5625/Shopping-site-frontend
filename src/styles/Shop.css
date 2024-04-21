@@ -1,8 +1,26 @@
 .all-products{
   display: flex;
   flex-wrap: wrap;
+  height: 300px;
 }
 .all-products > * {
   flex: 0 0 calc(25% - 150px);
   margin: 20px;
+}
+.add-remove-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 9vw;
+  margin-top: 6px;
+}
+.add-btn{
+  padding: 8px;
+  border-radius: 5px;
+  background-color: greenyellow;
+}
+.add-btn:hover{
+  cursor: pointer;
+  background-color: green;
+  color: white;
 }
